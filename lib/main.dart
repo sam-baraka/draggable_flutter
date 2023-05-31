@@ -1,8 +1,13 @@
-import 'package:draggable_flutter/images.dart';
+import 'package:draggable_flutter/firestore_images.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-void main() {
+void main() async {
+  // initialize firebase
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    
+  );
   runApp(const MyApp());
 }
 
@@ -33,16 +38,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      home: const FirestoreImageSwitcher(),
     );
-  }
-}
-
-class HomePage extends ConsumerWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    return ImagesWidget();
   }
 }
