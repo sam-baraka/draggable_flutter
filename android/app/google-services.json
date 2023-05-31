@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "239430755867",
+    "project_id": "draggableimages",
+    "storage_bucket": "draggableimages.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239430755867:android:bb33ca3bf64c2865f2babe",
+        "android_client_info": {
+          "package_name": "com.example.draggable_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBboIpdDni6jlFqQ1K9ECy0GwEnS6WrI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
